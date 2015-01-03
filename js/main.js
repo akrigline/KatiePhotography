@@ -3,7 +3,7 @@
 	
 	// Setup variables
 	$window = $(window);
-	$slide = $('.homeSlide');
+	$slide = $('.skrollrSlide');
 	$body = $('body');
 	
     //FadeIn all sections   
