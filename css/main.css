@@ -8,8 +8,6 @@ Author's custom styles
 	padding:0 50px;
 }
 
-
-
 .title{
 	color:white;
 	font-family: 'Oswald', sans-serif;
@@ -23,23 +21,8 @@ Author's custom styles
 }
 
 .navlist{
-	color:black;
 	font-family: 'Oswald', sans-serif;
-	float:right;
-	width:auto;
-	height:50px;
 	font-weight:300;
-	margin-right:50px;
-	padding-top:5px;
-	position:relative;
-
-}
-
-.navlist li{
-	list-style-type:none;
-	display:inline;
-	padding-right:10px;
-	text-decoration:none;
 }
 
 .work{
@@ -76,130 +59,43 @@ Author's custom styles
 	margin-right:auto;
 	margin-top:30px;
 	float:right;
-
 }
 
-.about{
-	width:100%;
-	position:relative;
-	float:left;
-	height:;
-	margin-top:;
+h1.aboutHead{
 	font-family: 'Oswald', sans-serif;
 	font-weight:700;
 	font-size:70px;
 	border-bottom:black solid 5px;
 	padding-bottom:20px;
-
-
 }
 
-.photo{
-	width:960px;
-	height:400px;
-	background-color:black;	
-}
-
-.hello{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight:900;
-	font-size:80px;
-	margin:0;
-	border-bottom:#7994B5 solid 1px;
-	padding-bottom:20px;
-}
-
-.fine{
-	color:#7994B5;
-}
-
-.def{
+.about{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight:300;
-	font-size:24px;
-	padding-top:18px;
-	padding-bottom:20px;
-	margin:0;
-	line-height:1.7em;	
-}
-
-.footer{
-	width:auto;
-	font-family: 'Oswald', sans-serif;
-	padding-left:50px;
-	font-size:30px;
-	position:fixed;
-	bottom:0;
-	left:0;
-
+	line-height:1.7em;
 }
 
 .body{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight:300;
 	font-size:21px;
 	padding-top:25px;
-	margin:0;
-	width:auto;
-	line-height:1.7em;
-	float:left;		
 }
 
 .body2{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight:300;
 	font-size:17px;
 	padding-top:25px;
-	margin:0;
-	width:auto;
-	line-height:1.7em;
-	float:right;		
 }
 
 .skills{
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight:300;
 	font-size:13px;
-	padding-top:25px;
-	margin:0;
-	width:300px;
-	line-height:1.7em;
-	float:left;
-	position:relative;
-	padding-right:15px;		
-}
-
-.footer ul{
-	margin:0;
-	padding:0;	
-}
-
-.footer ul li{
-	margin:0;
-	list-style-type:none;	
-}
-
-.clear{
-	clear:both;	
+	padding-top:25px;	
 }
 
 a{
 	text-decoration:none;	
 }
-
-a:link{
+a:link, a:visited, a:active{
 	color:white;	
 }
-
-a:active{
-	color:white;	
-}
-
-a:visited{
-	color:white;
-
-}
-
 a:hover{
 	color:#7994B5;
 }
@@ -211,36 +107,14 @@ a:hover{
 	height:100%;
 }
 
-ul.imagelist{
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	text-align:center;
-
-}
-
-ul.imagelist li{
-	display:inline-block;
-	height: auto;
-	margin: 0 0 0 0;
-	position: relative;
-	float:left;
-	width: 33.33333333%;
-
-}
-
 span.hovertext{
 	background: rgba(0,0,0,0.8);
 	font-family: 'Oswald', sans-serif;
 	font-weight:400;
 	color: white;
-	cursor: pointer;
-	display: table;
-	height: 800px;
 	left: 0;
 	position: absolute;
 	top: 0;
-	width: 100%;
 	opacity: 0;
 	-webkit-transition: opacity 500ms;
 	-moz-transition: opacity 500ms;
@@ -249,14 +123,8 @@ span.hovertext{
 	font-size:60px;
 }
 
-span.hovertext span{
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle;
 
-}
-
-ul.imagelist li:hover span.hovertext{
+.portfolio li:hover span.hovertext{
 	opacity: 1;
 
 }

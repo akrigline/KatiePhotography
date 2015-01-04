@@ -3,149 +3,170 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-  </head>
-  <body class="loading">
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body class="loading">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-  
-    <nav class="navbar top-nav navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Katie Slider</a>
+        <![endif]-->
+
+        <nav class="navbar top-nav navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Katie Slider</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Work</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">C/V</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <div id="preload" class="sr-only">
+          <img src="img/katiephoto1.jpg">
+          <img src="img/downarrow.png">
+          <img src="img/katiephoto2.jpg">
+          <img src="img/katiephoto3.jpg">
+          <img src="img/katiephoto4.jpg">
+          <img src="img/katielandscape.jpg">
+          <img src="img/bcg_slide-4.jpg">
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Work</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">C/V</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-    <div id="preload" class="sr-only">
-      <img src="img/katiephoto1.jpg">
-      <img src="img/downarrow.png">
-      <img src="img/katiephoto2.jpg">
-      <img src="img/katiephoto3.jpg">
-      <img src="img/katiephoto4.jpg">
-      <img src="img/katielandscape.jpg">
-      <img src="img/bcg_slide-4.jpg">
-    </div>
-
-    <section id="slide-1" class="skrollrSlide">
-      <div class="bcg"
-        data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -100px;"
-        data-bottom-top="background-position: 50% 100px;"
-        data-anchor-target="#slide-1" >
-            <div class="hsContent"
-              data-center="opacity: 1"
-              data-600-top="opacity: 0"
-              data-600-bottom="opacity: 0;"
-              data-anchor-target="#slide-1" >
-              <img src="img/downarrow.png" alt="Scroll Down">
-            </div>
+        <section id="slide-1" class="skrollrSlide">
+          <div class="bcg"
+          data-center="background-position: 50% 0px;"
+          data-top-bottom="background-position: 50% -100px;"
+          data-bottom-top="background-position: 50% 100px;"
+          data-anchor-target="#slide-1" >
+          <div class="hsContent"
+          data-center="opacity: 1"
+          data-200-top="opacity: 0"
+          data-anchor-target="#slide-1" >
+          <img src="img/downarrow.png" alt="Scroll Down">
+        </div>
       </div>
     </section>
 
     <section id="slide-2" class="skrollrSlide">
       <div class="bcg"
-        data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -100px;"
-        data-bottom-top="background-position: 50% 100px;"
-        data-anchor-target="#slide-2" >
-            <div class="hsContent"
-              data-center="opacity: 1"
-              data-600-top="opacity: 0"
-              data--600-bottom="opacity: 0;"
-              data-anchor-target="#slide-2" >
-              <div class="portfolio">
-                <ul class="imagelist">
-                  <li>
-                    <a href="">
-                      <img src="img/katiephoto2.jpg" />
-                      <span class="hovertext"><span>NOT SO ADOLESCENT</span></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <img src="img/katiephoto3.jpg" />
-                      <span class="hovertext"><span>UNTITLED</span></span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="">
-                      <img src="img/katiephoto4.jpg" />
-                      <span class="hovertext"><span>35mm</span></span>
-                    </a>
-                  </li>
-                  
-                </ul>
-              </div>
-              
-              <!--end portfolio-->
-            </div>
-          </div>
-      </div>
-    </section>
+      data-center="background-position: 50% 0px;"
+      data-top-bottom="background-position: 50% -100px;"
+      data-bottom-top="background-position: 50% 100px;"
+      data-anchor-target="#slide-2" >
+      <div class="hsContent"
+      data-center="opacity: 1"
+      data-600-top="opacity: 0"
+      data-anchor-target="#slide-2" >
 
-    <section id="slide-3" class="skrollrSlide">
-      <div class="bcg"
-        data-center="background-position: 50% 0px;"
-        data-top-bottom="background-position: 50% -100px;"
-        data-bottom-top="background-position: 50% 100px;"
-        data-anchor-target="#slide-3" >
-            <div class="hsContent"
-              data-center="opacity: 1"
-              data-600-top="opacity: 0"
-              data--600-bottom="opacity: 0;"
-              data-anchor-target="#slide-3" >
+      <div class="portfolio">
+        <ul class="list-unstyled">
+          <li class="col-xs-12 col-sm-4">
+            <a href="">
+              <img src="img/katiephoto2.jpg">
+              <span class="hovertext">NOT SO ADOLESCENT</span>
+            </a>
+          </li>
+          <li class="col-xs-12 col-sm-4">
+            <a href="">
+              <img src="img/katiephoto3.jpg">
+              <span class="hovertext">UNTITLED</span>
+            </a>
+          </li>
+          <li class="col-xs-12 col-sm-4">
+            <a href="">
+              <img src="img/katiephoto4.jpg">
+              <span class="hovertext">35mm</span>
+            </a>
+          </li>
 
-            </div>
-      </div>
-    </section>
+        </ul>
+      </div><!--end portfolio-->
+      
+    </div>
+  </div>
+</section>
+<section id="slide-3" class="skrollrSlide about">
+  <div class="bcg"
+  data-center="background-position: 50% 0px;"
+  data-top-bottom="background-position: 50% -100px;"
+  data-bottom-top="background-position: 50% 100px;"
+  data-anchor-target="#slide-3"
+  >
+  <div class="hsContent"
+  data--600-bottom="opacity: 0;"
+  data-center="opacity: 1"
+  data-600-top="opacity: 0"
+  data-anchor-target="#slide-3"
+  >
 
+  <h1 class="aboutHead col-xs-12">
+    FINE ART PHOTOGRAPHER
+  </h1>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+  <div class="body col-xs-12">
+   is photography created in accordance with the vision of the artist as photographer. Fine art photography stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally re-presenting objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products or services.
+ </div>
 
-    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/skrollr.js"></script>
-    <script src="js/main.js"></script>
+ <div class="body2 col-xs-12">
+  is photography created in accordance with the vision of the artist as photographer. Fine art photography stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally re-presenting objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products or services.
+</div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-        e.src='//www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-        ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-  </body>
+<div class="skills col-xs-12 col-sm-4">
+  is photography created in accordance with the vision of the artist as photographer. Fine art photography stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally re-presenting objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products or services.
+</div>
+
+<div class="skills col-xs-12 col-sm-4">
+  is photography created in accordance with the vision of the artist as photographer. Fine art photography stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally re-presenting objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products or services.
+</div>
+
+<div class="skills col-xs-12 col-sm-4">
+  is photography created in accordance with the vision of the artist as photographer. Fine art photography stands in contrast to representational photography, such as photojournalism, which provides a documentary visual account of specific subjects and events, literally re-presenting objective reality rather than the subjective intent of the photographer; and commercial photography, the primary focus of which is to advertise products or services.
+</div>
+</div>
+
+</div>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+<script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/vendor/skrollr.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','UA-XXXXX-X');ga('send','pageview');
+</script>
+</body>
 </html>
