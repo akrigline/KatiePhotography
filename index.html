@@ -59,13 +59,13 @@
         <section id="intro" class="skrollrSlide intro">
           <div class="bcg"
           data-center="background-position: 50% 0px;"
-          data-top-bottom="background-position: 50% -100px;"
-          data-bottom-top="background-position: 50% 100px;"
+          data-top-bottom="background-position: 50% -200px;"
+          data-bottom-top="background-position: 50% 200px;"
           data-anchor-target="#intro"
           style="background-image:url('img/katiephoto1.jpg')">
             <figure class="arrow col-xs-12"
-            data-center="opacity: 1"
-            data-200-top="opacity: 0"
+            data-bottom="opacity: 1"
+            data-center-bottom="opacity: 0"
             data-anchor-target="#intro">
               <img src="img/downarrow.png" alt="Scroll Down">
             </figure>
@@ -73,34 +73,41 @@
         </section>
 
         <section id="portfolio" class="skrollrSlide">
-          <div
-          data-center="opacity: 1"
-          data-600-top="opacity: 0"
+          <div class="fullHeight"
+          data-bottom-top="opacity: 0"
+          data-center-top="opacity: 1"
+          data-center-bottom="opacity: .75"
           data-anchor-target="#portfolio">
 
-            <ul class="portfolio clearfix list-unstyled">
-              <li class="col-xs-12 col-sm-4">
+            <ul class="clearfix list-unstyled">
+              <li class="col-xs-4">
                 <figure class="row">
-                  <a href="#">
                     <img src="img/katiephoto2.jpg">
-                    <figcaption class="hovertext">NOT SO ADOLESCENT</figcaption>
-                  </a>
+                    <figcaption class="hovertext">
+                      <a href="#">
+                        <h5>NOT SO ADOLESCENT</h5>
+                      </a>
+                    </figcaption>
                 </figure>
               </li>
-              <li class="col-xs-12 col-sm-4">
+              <li class="col-xs-4">
                 <figure class="row">
-                  <a href="#">
                     <img src="img/katiephoto3.jpg">
-                    <figcaption class="hovertext">UNTITLED</figcaption>
-                  </a>
+                    <figcaption class="hovertext">
+                      <a href="#">
+                        <h5>UNTITLED</h5>
+                      </a>
+                    </figcaption>
                 </figure>
               </li>
-              <li class="col-xs-12 col-sm-4">
+              <li class="col-xs-4">
                 <figure class="row">
-                  <a href="#">
                     <img src="img/katiephoto4.jpg">
-                    <figcaption class="hovertext">35mm</figcaption>
-                  </a>
+                    <figcaption class="hovertext">
+                      <a href="#">
+                        <h5>35mm</h5>
+                      </a>
+                    </figcaption>
                 </figure>
               </li>
             </ul><!--end portfolio-->
@@ -109,10 +116,9 @@
         </section>
 
         <section id="about" class="skrollrSlide">
-            <div
-            data--600-bottom="opacity: 0;"
-            data-center="opacity: 1"
-            data-600-top="opacity: 0"
+            <div class="container"
+            data-bottom-top="opacity: 0"
+            data-center-top="opacity: 1"
             data-anchor-target="#about"
             >
 
