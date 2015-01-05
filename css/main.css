@@ -2,6 +2,10 @@
 Author's custom styles
 ========================================================================== */
 
+body{
+	padding-top:70px;
+}
+
 .navbar{
 	background-color: #000015;
 	height:70px;
@@ -23,42 +27,6 @@ Author's custom styles
 .navlist{
 	font-family: 'Oswald', sans-serif;
 	font-weight:300;
-}
-
-.work{
-	float:left;
-	font-size:10px;
-	text-align:right;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight:300;
-	margin-top:30px;
-
-}
-
-
-.work p{
-	font-size:30px;
-	border-bottom:#7994B5 solid 1px;
-	font-weight:900;
-	margin:0;	
-}
-
-.work ul li{
-	list-style-type:none;
-	font-size:12px;
-	line-height:1.6em;
-
-
-}
-
-.gallery{
-	height:700px;
-	width:700px;
-	background-color:black;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:30px;
-	float:right;
 }
 
 h1.aboutHead{
@@ -107,6 +75,11 @@ a:hover{
 	height:100%;
 }
 
+.portfolio li,
+.portfolio .row{
+	height:100%;
+}
+
 span.hovertext{
 	background: rgba(0,0,0,0.8);
 	font-family: 'Oswald', sans-serif;
@@ -129,14 +102,21 @@ span.hovertext{
 
 }
 
+.portImg{
+	width:100%;
+}
 
 .clearing{
 	clear:both;	
 }
 
-.imagelist li img{
-	width:100%;
-	height:auto;	
+.portfolio li img{
+	height:100%;
+	width:auto;	
+}
+
+.skrollrSlide{
+	height:100%;
 }
 
 
@@ -188,15 +168,11 @@ body, html{
 }
 
 /* Slide 2 */
-#slide-2 .bcg{background-color:black;
+#slide-2 .bcg{
+	background-color:black;
 	height:auto;
 }
 #slide-2 .hsContent{
-	width:100%;
-	bottom: 50px;
-	position:relative;
-	float:left;
-	top:0;
 }
 #slide-2 h2{
 	position: absolute;
