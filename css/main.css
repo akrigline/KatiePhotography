@@ -2,34 +2,33 @@
 Author's custom styles
 ========================================================================== */
 
+body, html{
+	height: 100%;
+	min-height: 100%;
+	background-color: #000000;
+}
+
 body{
 	padding-top:70px;
 }
 
-.navbar{
-	background-color: #000015;
-	height:70px;
-	padding:0 50px;
+
+
+.bcg{
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
 }
 
-.title{
-	color:white;
-	font-family: 'Oswald', sans-serif;
-	margin-left:50px;
-	font-size:35px;
-	padding-top:8px;
-	float:left;
-	position:relative;
-	font-weight:400;
-	letter-spacing:.05em;
+.skrollrSlide{
+	height:100%;
 }
+/**** Typography ****/
 
-.navlist{
-	font-family: 'Oswald', sans-serif;
-	font-weight:300;
-}
-
-h1.aboutHead{
+h1{
 	font-family: 'Oswald', sans-serif;
 	font-weight:700;
 	font-size:70px;
@@ -37,23 +36,27 @@ h1.aboutHead{
 	padding-bottom:20px;
 }
 
-.about{
-	font-family: 'Source Sans Pro', sans-serif;
+
+/*
+.hsContent h2 {
+	color: white;
+	font-family: 'Oswald', sans-serif;
 	font-weight:300;
-	line-height:1.7em;
+	padding: 10px 5px;
+	font-size: 35px;
+	line-height: 38px;
+	margin-bottom: 12px;
 }
+*/
+h2{	font-size:21px;
+	padding-top:25px;}
 
-.body{
-	font-size:21px;
-	padding-top:25px;
-}
+h3{	font-size:17px;
+	padding-top:25px;}
 
-.body2{
-	font-size:17px;
-	padding-top:25px;
-}
+h4{}
 
-.skills{
+p{
 	font-size:13px;
 	padding-top:25px;	
 }
@@ -68,15 +71,33 @@ a:hover{
 	color:#7994B5;
 }
 
-.portfolio{
+/**** Navigation ****/
+.navbar{
+	background-color: #000015;
+	height:70px;
+	padding:0 50px;
+}
+
+
+/**** Intro ****/
+
+#intro figure{
+	position:absolute;
+	bottom:50px;
+	text-align:center;
+}
+
+/**** Portfolio ****/
+
+#portfolio ul{
 	position:relative;
 	float:left;
 	width:100%;
 	height:100%;
 }
 
-.portfolio li,
-.portfolio .row{
+#portfolio ul li,
+#portfolio ul .row{
 	height:100%;
 }
 
@@ -97,37 +118,28 @@ span.hovertext{
 }
 
 
-.portfolio li:hover span.hovertext{
+#portfolio ul li:hover span.hovertext{
 	opacity: 1;
 
 }
 
-.portImg{
-	width:100%;
-}
-
-.clearing{
-	clear:both;	
-}
-
-.portfolio li img{
+#portfolio ul li img{
 	height:100%;
 	width:auto;	
 }
 
-.skrollrSlide{
-	height:100%;
+
+/**** About ****/
+
+#about{
+	background-color:white;
 }
+
 
 
 /* ==========================================================================
-Parallax Scroll Courtesy of IHateTomatoes
+Loading Image
 ========================================================================== */
-body, html{
-	height: 100%;
-	min-height: 100%;
-	background-color: #000000;
-}
 .loading{
 	background: url('../img/ico_loading.gif') no-repeat center center;
 }
@@ -138,71 +150,4 @@ body, html{
 	-webkit-transition: opacity 300ms ease-out;
 	-moz-transition: opacity 300ms ease-out;
 	transition: opacity 300ms ease-out;
-}
-
-.bcg{
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
-}
-
-.hsContent h2 {
-	color: white;
-	font-family: 'Oswald', sans-serif;
-	font-weight:300;
-	padding: 10px 5px;
-	font-size: 35px;
-	line-height: 38px;
-	margin-bottom: 12px;
-}
-
-/* Slide 1 */
-#slide-1 .bcg{background-image:url('../img/katiephoto1.jpg');}
-#slide-1 .hsContent{
-	position:absolute;
-	bottom:0;
-	right:50%;
-}
-
-/* Slide 2 */
-#slide-2 .bcg{
-	background-color:black;
-	height:auto;
-}
-#slide-2 .hsContent{
-}
-#slide-2 h2{
-	position: absolute;
-}
-/* Slide 3 */
-
-#slide-3 .bcg{background-color:white;}
-#slide-3 .hsContent{
-
-	position:relative;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:100px;
-	width:960px;
-}
-#slide-3 h2{
-	color: #f2ead6;
-	background-color: rgba(0,0,0,0.6);
-}
-
-/* Slide 4 */
-#slide-4 .bcg{background-image:url('../img/bcg_slide-4.jpg');}
-#slide-4 .hsContent{
-	margin-left: -450px;
-	position: absolute;
-	top: 250px;
-	z-index:0;
-}
-#slide-4 h2{
-	background: none;
-	padding-left: 0;
-	padding-right: 0;
 }
