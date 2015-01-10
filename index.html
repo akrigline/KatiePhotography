@@ -15,7 +15,7 @@
 
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body class="loading">
+<body class="loading" data-spy="scroll" data-target=".top-nav" data-offset="50">
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -36,8 +36,8 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Work</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#portfolio">Work</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">C/V</a></li>
@@ -55,7 +55,7 @@
           <img src="img/katielandscape.jpg">
         </div>
 
-        <section id="intro" class="skrollrSlide intro">
+        <section id="intro" class="skrollrSlide intro fullHeight">
           <div class="bcg"
           data-center="background-position: 50% 0px;"
           data-top-bottom="background-position: 50% -200px;"
@@ -72,7 +72,7 @@
         </section>
 
         <section id="portfolio" class="skrollrSlide">
-          <div class="fullHeight"
+          <div
           data-bottom-top="opacity: 0"
           data-center-top="opacity: 1"
           data-center-bottom="opacity: 1"
@@ -80,8 +80,8 @@
           data-anchor-target="#portfolio">
 
             <ul class="clearfix list-unstyled">
-              <li class="col-xs-4">
-                <figure class="row">
+              <li class="col-xs-6 col-sm-6 col-md-4">
+                <figure>
                     <img src="img/katiephoto2.jpg">
                     <figcaption class="hovertext">
                       <a href="#">
@@ -90,8 +90,8 @@
                     </figcaption>
                 </figure>
               </li>
-              <li class="col-xs-4">
-                <figure class="row">
+              <li class="col-xs-6 col-sm-6 col-md-4">
+                <figure>
                     <img src="img/katiephoto3.jpg">
                     <figcaption class="hovertext">
                       <a href="#">
@@ -100,8 +100,18 @@
                     </figcaption>
                 </figure>
               </li>
-              <li class="col-xs-4">
-                <figure class="row">
+              <li class="col-xs-6 col-sm-6 col-md-4">
+                <figure>
+                    <img src="img/katiephoto4.jpg">
+                    <figcaption class="hovertext">
+                      <a href="#">
+                        <h5>35mm</h5>
+                      </a>
+                    </figcaption>
+                </figure>
+              </li>
+              <li class="col-xs-6 col-sm-6 col-md-4">
+                <figure>
                     <img src="img/katiephoto4.jpg">
                     <figcaption class="hovertext">
                       <a href="#">
@@ -115,7 +125,7 @@
           </div>
         </section>
 
-        <section id="about" class="skrollrSlide">
+        <section id="about" class="skrollrSlide fullHeight">
             <div class="container"
             data-bottom-top="opacity: 0"
             data-center-top="opacity: 1"
