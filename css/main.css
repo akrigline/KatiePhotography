@@ -115,8 +115,29 @@ a:hover{
 	box-shadow:none;
 }
 
-.navbar-nav>li:focus{
+.navbar-nav>li a:focus,
+.navbar-nav>li a:active{
 	background:#000;
+}
+
+
+.navbar-toggle{
+  background:#fff;
+  border: 1px solid #333;
+}
+
+.navbar-toggle.collapsed{
+  background:#333;
+  border: 1px solid #fff;
+}
+
+.navbar-toggle.collapsed .icon-bar{
+	background:#fff;
+}
+
+.navbar-toggle .icon-bar{
+  background:#333;
+  height:3px;
 }
 
 /**** Intro ****/
@@ -233,84 +254,59 @@ Loading Image
 /*--------------------------
 Gallery Page
 ----------*/
-#imageGallery{
+.bx-wrapper{
+	width:80%;
+	height:80%;
+}
+
+.imageGallery{
 	height:100%;
-	width:100%;
+	margin:0;
 }
 
-#imageGallery div{
-	width:100%;
-	height:100%;
+.imageGallery img{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	max-width:100%;
+	max-height:100%;
+	margin:auto;
 }
 
-#gallerySlides{
-	width:100%;
-	height:100%;
+.bx-prev{
+	left:-50px;
 }
 
-
-/* jssor slider arrow navigator skin 05 css */
-/*
-.jssora05l              (normal)
-.jssora05r              (normal)
-.jssora05l:hover        (normal mouseover)
-.jssora05r:hover        (normal mouseover)
-.jssora05ldn            (mousedown)
-.jssora05rdn            (mousedown)
-*/
-.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
-{
-	position: absolute;
-	cursor: pointer;
-	display: block;
-    background: url(../img/a17.png) no-repeat;
-    overflow:hidden;
-}
-.jssora05l { background-position: -10px -40px; }
-.jssora05r { background-position: -70px -40px; }
-.jssora05l:hover { background-position: -130px -40px; }
-.jssora05r:hover { background-position: -190px -40px; }
-.jssora05ldn { background-position: -250px -40px; }
-.jssora05rdn { background-position: -310px -40px; }
-
-/* jssor slider thumbnail navigator skin 01 css */
-/*
-.jssort01 .p           (normal)
-.jssort01 .p:hover     (normal mouseover)
-.jssort01 .pav           (active)
-.jssort01 .pav:hover     (active mouseover)
-.jssort01 .pdn           (mousedown)
-*/
-.jssort01 .w {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
+.bx-next{
+	right:50px;
 }
 
-.jssort01 .c {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 68px;
-  height: 68px;
-  border: #000 2px solid;
+.thumbnails{
+	text-align:center;
 }
 
-.jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
-  background: url(../img/t01.png) center center;
-  border-width: 0px;
-  top: 2px;
-  left: 2px;
-  width: 68px;
-  height: 68px;
+.thumbnails li{
+	display:inline-block;
+	margin: 1em 1em 0 0;
 }
 
-.jssort01 .p:hover .c, .jssort01 .pav:hover .c {
-  top: 0px;
-  left: 0px;
-  width: 70px;
-  height: 70px;
-  border: #fff 1px solid;
+.thumbnails li a{
+	height:8em;
+	width:8em;
+	display:block;
+	overflow:hidden;
+	border: 1em solid #333;
+	background: #333;
+}
+
+.thumbnails .active{
+	border:1em solid #fff;
+	background: #fff;
+}
+
+.thumbnails img{
+	max-width:150%;
+	max-height:150%;
 }

@@ -10,6 +10,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -30,7 +31,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Katie Allyson Slider</a>
+              <a class="navbar-brand" href="index.html">Katie <span class="hidden-xs">Allyson </span>Slider</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,6 +52,18 @@
         </div>
 
         <section class="fullHeight">
+          <ul class="imageGallery list-unstyled">
+            <li><img src="img/katiephoto1.jpg" /></li>
+            <li><img src="img/katiephoto2.jpg" /></li>
+            <li><img src="img/katiephoto3.jpg" /></li>
+            <li><img src="img/katiephoto4.jpg" /></li>
+          </ul>
+          <ul class="thumbnails list-unstyled">
+            <li><a href="" data-slide-index="0"><img src="img/katiephoto1.jpg"></a></li>
+            <li><a href="" data-slide-index="1"><img src="img/katiephoto2.jpg"></a></li>
+            <li><a href="" data-slide-index="2"><img src="img/katiephoto3.jpg"></a></li>
+            <li><a href="" data-slide-index="3"><img src="img/katiephoto4.jpg"></a></li>
+          </ul>
         </section>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -59,7 +72,8 @@
 <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/jquery.bxslider.min.js"></script>
-<script src="js/vendor/main.js"></script>
+
+<script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

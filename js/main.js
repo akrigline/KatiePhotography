@@ -20,12 +20,17 @@
     });
     
     function adjustWindow(){
-    	
 		// Init Skrollr
 		var s = skrollr.init({
 			forceHeight: false
 		});
-	    
 	}
 
+	$(document).ready(function(){
+		$('.imageGallery').bxSlider({
+			pagerCustom: '.thumbnails',
+			infiniteLoop: false,
+			hideControlOnEnd: true
+		});
+	});
 } )( jQuery );
