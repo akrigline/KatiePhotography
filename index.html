@@ -21,7 +21,7 @@
         <![endif]-->
 
         <nav class="navbar top-nav navbar-fixed-top" role="navigation">
-          <div class="container-fluid">
+          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -94,7 +94,7 @@
                 <figure>
                     <img src="img/katiephoto3.jpg">
                     <figcaption class="hovertext">
-                      <a href="#">
+                      <a href="gallery.html">
                         <h5>UNTITLED</h5>
                       </a>
                     </figcaption>
@@ -104,7 +104,7 @@
                 <figure>
                     <img src="img/katiephoto4.jpg">
                     <figcaption class="hovertext">
-                      <a href="#">
+                      <a href="gallery.html">
                         <h5>35mm</h5>
                       </a>
                     </figcaption>
@@ -114,7 +114,7 @@
                 <figure>
                     <img src="img/katiephoto4.jpg">
                     <figcaption class="hovertext">
-                      <a href="#">
+                      <a href="gallery.html">
                         <h5>35mm</h5>
                       </a>
                     </figcaption>
@@ -163,6 +163,34 @@
 <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/skrollr.js"></script>
+
+<script>
+    // Setup variables
+  $window = $(window);
+  $slide = $('.skrollrSlide');
+  $body = $('body');
+  
+    //FadeIn all sections   
+    $body.imagesLoaded( function() {
+      setTimeout(function() {
+        
+          // Resize sections
+          adjustWindow();
+          
+          // Fade in sections
+          $body.removeClass('loading').addClass('loaded');
+          
+      }, 100);
+    });
+    
+    function adjustWindow(){
+    // Init Skrollr
+    var s = skrollr.init({
+      forceHeight: false
+    });
+  }
+</script>
+
 <script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

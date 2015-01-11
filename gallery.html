@@ -22,7 +22,7 @@
         <![endif]-->
 
         <nav class="navbar top-nav navbar-fixed-top" role="navigation">
-          <div class="container-fluid">
+          <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -44,7 +44,7 @@
                 <li><a href="#">C/V</a></li>
               </ul>
             </div><!-- /.navbar-collapse -->
-          </div><!-- /.container-fluid -->
+          </div><!-- /.container -->
         </nav>
 
         <div id="preload" class="sr-only">
@@ -52,18 +52,55 @@
         </div>
 
         <section class="fullHeight">
+          <div class="container">
+            <h4>Title of Collection</h4>
+          </div><!-- container -->
+
           <ul class="imageGallery list-unstyled">
-            <li><img src="img/katiephoto1.jpg" /></li>
-            <li><img src="img/katiephoto2.jpg" /></li>
-            <li><img src="img/katiephoto3.jpg" /></li>
-            <li><img src="img/katiephoto4.jpg" /></li>
-          </ul>
-          <ul class="thumbnails list-unstyled">
-            <li><a href="" data-slide-index="0"><img src="img/katiephoto1.jpg"></a></li>
-            <li><a href="" data-slide-index="1"><img src="img/katiephoto2.jpg"></a></li>
-            <li><a href="" data-slide-index="2"><img src="img/katiephoto3.jpg"></a></li>
-            <li><a href="" data-slide-index="3"><img src="img/katiephoto4.jpg"></a></li>
-          </ul>
+            <li>
+              <figure>
+                <img src="img/katiephoto1.jpg" />
+                <figcaption>
+                <h5>photo title</h5>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/katiephoto2.jpg" />
+                <figcaption>
+                <h5>photo title</h5>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/katiephoto3.jpg" />
+                <figcaption>
+                <h5>photo title</h5>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure>
+                <img src="img/katiephoto4.jpg" />
+                <figcaption>
+                <h5>photo title</h5>
+                </figcaption>
+              </figure>
+            </li>
+          </ul><!-- imageGallery-->
+
+          <div class="container">
+          <div class="thumbContainer">
+            <ul class="thumbnails list-unstyled clearfix">
+              <li><a href="" data-slide-index="0"><img src="img/katiephoto1.jpg"></a></li>
+              <li><a href="" data-slide-index="1"><img src="img/katiephoto2.jpg"></a></li>
+              <li><a href="" data-slide-index="2"><img src="img/katiephoto3.jpg"></a></li>
+              <li><a href="" data-slide-index="3"><img src="img/katiephoto4.jpg"></a></li>
+            </ul><!-- thumbnails -->
+          </div>
+          </div><!-- container -->
         </section>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -72,6 +109,29 @@
 <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/jquery.bxslider.min.js"></script>
+
+<script>
+  
+  $(document).ready(function(){
+    $('.imageGallery').bxSlider({
+      pagerCustom: '.thumbnails',
+      infiniteLoop: false,
+      hideControlOnEnd: true
+    });
+  });
+  
+  
+  //Set Thumbnails width correctly
+  var sum=0;
+  $(document).ready(function(){
+    $('.thumbnails li').each( function(){ sum +=  $(this).width(); });
+    $('.thumbnails').width( sum );
+  });
+  $(window).resize(function(){
+    $('.thumbnails li').each( function(){ sum +=  $(this).width(); });
+    $('.thumbnails').width( sum );
+  });
+</script>
 
 <script src="js/main.js"></script>
 
